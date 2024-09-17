@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+
+    --font-size: 16px;
+
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-light-cyan: #84d5d5;
+    --color-bright-yellow: hsl(71, 73%, 54%);
+
+    --color-white: #fdfefc;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+.single-price-grid-component{
+    width: 100%;
+    height: 100vh;
+    background: var(--color-light-gray);
+    display: grid;
+    place-items: center;
+}
+
+.single-price-grid{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 280px;
+    background-color: var(--color-white);
+    border-radius: .5rem;
+}
+
+.single-price-grid-community{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 2rem;
+}
+
+.single-price-grid-community h1{
+    font-size: 1.5rem;
+    color: var(--color-cyan);
+    margin-bottom: 1.5rem;
+}
+
+.single-price-grid-community h2{
+    font-size: 1.2rem;
+    color: var(--color-bright-yellow);
+    margin-bottom: 1rem;
+}
+
+.single-price-grid-community p{
+    font-size: var(--font-size);
+    line-height: 1.5rem;
+    color: var(--color-grayish-blue);
+}
+
+.single-price-grid-subscription{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--color-cyan);
+    padding: 2rem;
+}
+
+.single-price-grid-subscription h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+.single-price-grid-subscription .pricing{
+    font-size: 1.3rem;
+    color: var(--color-white);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.single-price-grid-subscription .access{
+    color: var(--color-white);
+    margin-bottom: 2.5rem;
+}
+
+.single-price-grid-subscription button{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--color-bright-yellow);
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: var(--font-size);
+    box-shadow: 0px 10px 15px rgba(70, 67, 67, 0.397);
+}
+
+.pricing h3{
+    font-size: 2rem;
+}
+
+.pricing p{
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.single-price-grid-text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--color-light-cyan);
+    padding: 2rem;
+}
+
+.single-price-grid-text h3{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.single-price-grid-text p{
+    color: var(--color-white);
+    margin-bottom: .4rem;
+}
+
+.attribution{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background: var(--color-light-gray);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--color-white);
+}
