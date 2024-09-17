@@ -31,11 +31,13 @@
 
 .single-price-grid{
     width: 40%;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 280px;
     background-color: var(--color-white);
     border-radius: .5rem;
+    box-shadow: 0px 20px 20px var(--color-grayish-blue);
 }
 
 .single-price-grid-community{
@@ -140,4 +142,40 @@
 .attribution a{
     text-decoration: none;
     color: var(--color-white);
+}
+
+@media only screen and (max-width: 375px){
+
+    .single-price-grid-component{
+        width: 100%;
+        min-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15rem;
+    }
+
+    .single-price-grid{
+        width: 85%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 300px);
+        margin-bottom: 28rem;
+    }
+
+    .single-price-grid-community{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+    .single-price-grid-text{
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .attribution{
+        width: 100%;
+        padding: 1rem;
+    }
 }
