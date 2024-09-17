@@ -148,18 +148,18 @@
 
     .single-price-grid-component{
         width: 100%;
-        min-height: fit-content;
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 15rem;
+        padding-top: 5rem;
     }
 
     .single-price-grid{
         width: 85%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 300px);
-        margin-bottom: 28rem;
+        margin-bottom: 3rem;
     }
 
     .single-price-grid-community{
